@@ -1,0 +1,26 @@
+@import 'modules/panel1';
+@import 'modules/panel2';
+
+body {
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.panel1 {
+    align-items: center;
+    justify-content: center;
+}
+
+.panel2 {
+    background-color: #999999;
+}
+
+.panel3 {
+    background-color: #fbb03b;
+}
