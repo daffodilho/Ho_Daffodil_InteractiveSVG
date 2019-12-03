@@ -1,14 +1,22 @@
-<div class="container panel1">
+<section class="container panel1">
   <h1 id="title">How much <br><span>sugar</span><br> is in there?</h1>
-</div>
+</section>
 
-<div class="container panel2">
-  
-</div>
+<section class="container panel2">
+  <div id="icons">
+    {{#each drink}}
+    <div class="icon-wrap">
+      <a href="{{ID}}">
+        <object data="images/{{svg}}" type="image/svg+xml" class="selection"></object>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+</section>
 
-<div class="container panel3">
+<section class="container panel3">
   <h2>Did you know?</h2>
   <h3></h3>
-</div>
+</section>
 
 
