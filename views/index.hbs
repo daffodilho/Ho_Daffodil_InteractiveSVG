@@ -1,22 +1,36 @@
 <section class="container panel1">
-  <h1 id="title">How much <br><span>sugar</span><br> is in there?</h1>
+  <h1 id="title">How much <br><span id="heading">sugar</span><br> is in there?</h1>
 </section>
 
 <section class="container panel2">
   <div id="icons">
     {{#each drink}}
     <div class="icon-wrap">
-      <a href="{{ID}}">
-        <object data="images/{{svg}}" type="image/svg+xml" class="selection"></object>
+      <a href="{{ID}}" class="icon-link">
+        <span id="svg">
+          <object data="images/{{svg}}" type="image/svg+xml" class="icon-image"></object>
+        </span>
       </a>
+      <div class="icon-info">
+        <!-- database info-->
+      </div>
     </div>
     {{/each}}
   </div>
 </section>
 
 <section class="container panel3">
-  <h2>Did you know?</h2>
-  <h3></h3>
+  <div id="text">
+    <h2>Did you know?</h2>
+    <h3>According to the American Heart Association (AHA), the maximum amount of added sugars you should eat daily are:</h3>
+    <p>Men: 37.5g or 9 teaspoons<br>
+    Women: 25g or 6 teaspoons</p>
+  </div>
+
+  <div id="source">
+    <p>Source from caffeineinformer.com</p>
+  </div>
+  
 </section>
 
 
