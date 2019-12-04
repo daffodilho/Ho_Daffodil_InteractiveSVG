@@ -1,0 +1,48 @@
+.panel3 {
+    background-color: $main;
+    display: flex;
+    flex-direction: column;
+    animation: move 2s ease-out 1;
+
+
+    @keyframes move {
+        0% { transform: translateY(50px); } 
+        100% { transform: translateY(0px); }
+    }
+
+    #text {
+        width: 80%;
+        margin: 40px auto;
+        font-size: 0.85em;
+
+        p { color: $w; font-size: 2em; }
+    }
+
+    #source {
+        background-color: $w;
+        padding: 20px 30px;
+        font-size: 0.85em;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 375px) {
+    .panel3 #text {
+        font-size: 1.2em;
+    }
+
+    .panel3 #source {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .panel3 #text {
+        font-size: 1.5em;
+    }
+    
+    .panel3 #source {
+        font-size: 1em;
+    }
+}
